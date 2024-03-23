@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+}
+
+body{
+    background: var(--yellow);
+    font-family: "Figtree",sans-serif;
+}
+
+.container{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card{
+    background: var(--white);
+    border: var(--black) solid 2px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 10px 10px;
+}
+
+.card .illustration{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card .tag{
+    display: inline-block;
+    padding: 5px 10px;
+    background: var(--yellow);
+    font-weight: bolder;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.card .date{
+    font-weight: 500;
+    color: var(--black);
+}
+
+.card h1{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--black);
+    margin: 20px 0;
+}
+
+.card h1:hover{
+    color: var(--yellow);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card p{
+    color: var(--grey);
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.author img{
+    width: 35px;
+    height: 35px;
+}
+
+.author p{
+    font-weight: 800;
+    color: var(--black);
+    margin-left: 10px;
+}
